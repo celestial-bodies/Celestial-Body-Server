@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.celestialbodies.celestialbodies;
+package edu.cnm.deepdive.celestialbodies;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

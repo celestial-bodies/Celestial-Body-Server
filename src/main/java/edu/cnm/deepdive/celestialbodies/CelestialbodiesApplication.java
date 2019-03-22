@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.celestialbodies.celestialbodies;
+package edu.cnm.deepdive.celestialbodies;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -28,3 +28,5 @@ HELP.md
 ### VS Code ###
 .vscode/
 
+/star_db/
+derby.log

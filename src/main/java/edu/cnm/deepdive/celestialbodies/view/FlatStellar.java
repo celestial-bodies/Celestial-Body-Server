@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.celestialbodies.view;
+/*package edu.cnm.deepdive.celestialbodies.view;
 
 import java.util.Date;
 import java.util.UUID;
@@ -12,4 +12,4 @@ public interface FlatStellar {
 
 
   String getObjectName();
-}
+}*/

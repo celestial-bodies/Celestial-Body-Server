@@ -11,4 +11,6 @@ public interface StarRepository extends CrudRepository<Star, Long > {
 
     List<Star> findAllByProperContainingOrderByIdAsc(String query);
 
+    List<Star> findAllByRvGreaterThanEqualOrderByAbsmagAsc(double rvThreshold);
+
 }

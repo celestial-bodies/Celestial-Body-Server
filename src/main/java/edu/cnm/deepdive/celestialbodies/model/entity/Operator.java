@@ -23,12 +23,29 @@ import org.springframework.lang.NonNull;
 public class Operator {
 
 
- @Id
- @GeneratedValue(strategy = GenerationType.AUTO)
- @Column(name = "operator_id", nullable = false, updatable = false)
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  @Column(name = "operator_id", nullable = false, updatable = false)
   private long id;
 
-@Column(name = "user_email")
+  @Column(name = "user_email")
   private String userEmail;
 
+
+  public long getId() {
+    return id;
+  }
+
+  public void setId(long id) {
+    this.id = id;
+  }
+
+  public String getUserEmail() {
+    return userEmail;
+  }
+
+  public void setUserEmail(String userEmail) {
+    this.userEmail = userEmail;
+  }
 }

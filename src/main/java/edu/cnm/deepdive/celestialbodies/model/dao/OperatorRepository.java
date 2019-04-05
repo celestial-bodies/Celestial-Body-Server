@@ -12,7 +12,7 @@ import org.springframework.data.repository.CrudRepository;
  * accessed.
  */
 
-public interface OperatorRepository extends CrudRepository {
+public interface OperatorRepository extends CrudRepository<Operator, Long> {
 
 
 
@@ -25,7 +25,7 @@ public interface OperatorRepository extends CrudRepository {
      *
      * @return {@link Iterable} sequence of {@link Operator} instances.
      */
-    Iterable<Operator> findAllByOrderByTextAsc();
+    //Iterable<Operator> findAllByOrderByTextAsc();
 
     /**
      * Selects and returns all {@link Operator} instances containing the specified text fragment, in
@@ -34,7 +34,7 @@ public interface OperatorRepository extends CrudRepository {
      * @param fragment filter text content.
      * @return {@link Iterable} sequence of {@link Operator} instances.
      */
-    Iterable<Operator> findAllByTextContainingOrderByTextAsc(String fragment);
+    //Iterable<Operator> findAllByTextContainingOrderByTextAsc(String fragment);
 
     /**
      * Selects and returns a randomly selected {@link Operator} instance. Note that this is currently
@@ -51,4 +51,4 @@ public interface OperatorRepository extends CrudRepository {
 
 
 
-}
+

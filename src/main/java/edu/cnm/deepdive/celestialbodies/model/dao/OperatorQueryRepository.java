@@ -12,5 +12,5 @@ import org.springframework.data.repository.CrudRepository;
 public interface OperatorQueryRepository extends CrudRepository<OperatorQuery, Long> {
 
   List<OperatorQuery> findAllByOperatorOrderByCreatedDesc(Operator operator);
->>>>>>> origin/Ryan
+
 }

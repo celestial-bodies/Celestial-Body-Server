@@ -11,6 +11,8 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface StarRepository extends CrudRepository<Star, Long> {
 
+  List<Star> findFirst10ByOrderByAbsmag();
+
   List<Star> findAllByOrderByIdAsc();
 
   List<Star> findAllByOrderByHipAsc();
@@ -20,4 +22,6 @@ public interface StarRepository extends CrudRepository<Star, Long> {
   List<Star> findAllByOrderByHrAsc();
 
   List<Star> findAllByOrderByProper();
+
+  //add method to find star by different id types
 }

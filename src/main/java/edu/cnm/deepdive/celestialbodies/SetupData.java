@@ -1,6 +1,5 @@
 package edu.cnm.deepdive.celestialbodies;
 
-import antlr.Tool;
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvParser;
@@ -9,11 +8,7 @@ import edu.cnm.deepdive.celestialbodies.model.dao.StarRepository;
 import edu.cnm.deepdive.celestialbodies.model.entity.Star;
 import java.io.File;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.TimeZone;
-import javax.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;

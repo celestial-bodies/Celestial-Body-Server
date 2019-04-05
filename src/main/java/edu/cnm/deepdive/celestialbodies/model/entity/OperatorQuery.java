@@ -17,7 +17,7 @@ import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.lang.NonNull;
 
 @Entity
-public class OperatorQuery  {
+public class OperatorQuery {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)

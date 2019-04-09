@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -45,8 +46,8 @@ public class Operator {
   @Column
   private Long rating;
 
-  @OneToMany(mappedBy = "operator", fetch = FetchType.EAGER)
-  private List<Stellar> stellar = new LinkedList<>();
+  @ManyToMany
+  private List<Star> stars = new LinkedList<>();
 
   public UUID getId() {
     return id;
@@ -58,6 +59,14 @@ public class Operator {
 
   public String getProfile() {
     return profile;
+  }
+
+  public List<Star> getStars() {
+    return stars;
+  }
+
+  public void setStars(List<Star> stars) {
+    this.stars = stars;
   }
 
   public void setProfile(String profile) {
@@ -80,11 +89,5 @@ public class Operator {
     this.rating = rating;
   }
 
-  public List<Stellar> getStellar() {
-    return stellar;
-  }
 
-  public void setStellar(List<Stellar> stellar) {
-    this.stellar = stellar;
-  }
 }

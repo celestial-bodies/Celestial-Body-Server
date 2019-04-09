@@ -1,10 +1,7 @@
 package edu.cnm.deepdive.celestialbodies.model.dao;
 
-import android.widget.ListView;
 import edu.cnm.deepdive.celestialbodies.model.entity.Star;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.UUID;
 import org.springframework.data.repository.CrudRepository;
 
 
@@ -12,21 +9,28 @@ import org.springframework.data.repository.CrudRepository;
  * using Spring Boot annotations. This repository declares methods by which data established in the Star
  * entity will be accessed.
  */
-
 public interface StarRepository extends CrudRepository<Star, Long> {
 
+
+  /**
+   * Selects and returns 10 {@link Star} instances, sorted by Absmag.
+   *
+   * @return {@link List} sequence of {@link Star} instances.
+   */
   List<Star> findFirst10ByOrderByAbsmag();
 
+  /**
+   * Selects and returns {@link Star} Id.
+   *
+   * @return {@link List} of {@link Star} Id.
+   */
   List<Star> findAllByOrderByIdAsc();
 
-  List<Star> findAllByOrderByAbsmag();
-
-  List<Star> findAllByOrderByHipAsc();
-
-  List<Star> findAllByOrderByHdAsc();
-
-  List<Star> findAllByOrderByHrAsc();
-
+  /**
+   * Selects and returns {@link Star} Proper name.
+   *
+   * @return {@link List} {@link Star} Proper.
+   */
   List<Star> findAllByOrderByProper();
 
 }

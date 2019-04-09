@@ -196,6 +196,7 @@ public class Star {
 
   /**
    * Sets the star's ID in the third edition of the Gliese Catalog of Nearby Stars.
+   *
    * @param gl the star's ID in the third edition of the Gliese Catalog of Nearby Stars.
    */
   public void setGl(String gl) {
@@ -216,6 +217,7 @@ public class Star {
 
   /**
    * Sets the Bayer / Flamsteed designation.
+   *
    * @param bf the Bayer / Flamsteed designation.
    */
   public void setBf(String bf) {
@@ -233,6 +235,7 @@ public class Star {
 
   /**
    * Sets the common name for the star.
+   *
    * @param proper the common name for the star
    */
   public void setProper(String proper) {
@@ -241,6 +244,7 @@ public class Star {
 
   /**
    * Returns the star's right ascension for epoch and equinox 2000.0.
+   *
    * @return ra
    */
   public double getRa() {
@@ -249,6 +253,7 @@ public class Star {
 
   /**
    * Sets the star's right ascension, for epoch and equinox 2000.0.
+   *
    * @param ra the star's right ascension, for epoch and equinox 2000.0.
    */
   public void setRa(double ra) {
@@ -257,6 +262,7 @@ public class Star {
 
   /**
    * Returns the star's declination, for epoch and equinox 2000.0.
+   *
    * @return dec
    */
   public double getDec() {
@@ -265,233 +271,427 @@ public class Star {
 
   /**
    * Sets the star's declination, for epoch and equinox 2000.0.
+   *
    * @param dec the star's declination, for epoch and equinox 2000.0.
    */
   public void setDec(double dec) {
     this.dec = dec;
   }
 
-
+  /**
+   * Returns the star's distance in parsecs
+   */
   public double getDist() {
     return dist;
   }
 
+  /**
+   * Sets the star's distance in parsecs
+   */
   public void setDist(double dist) {
     this.dist = dist;
   }
 
+  /**
+   * Returns the star's proper motion in right ascension
+   */
   public double getPmra() {
     return pmra;
   }
 
+  /**
+   * Sets he star's proper motion in right ascension.
+   */
   public void setPmra(double pmra) {
     this.pmra = pmra;
   }
 
+  /**
+   * Returns the star's proper motion in declination.
+   */
   public double getPmdec() {
     return pmdec;
   }
 
+  /**
+   * Sets the star's proper motion in declination.
+   */
   public void setPmdec(double pmdec) {
     this.pmdec = pmdec;
   }
 
+  /**
+   * Returns the star's radial velocity in km/sec, where known.
+   */
   public Double getRv() {
     return rv;
   }
 
+  /**
+   * Sets the star's radial velocity in km/sec, where known.
+   */
   public void setRv(Double rv) {
     this.rv = rv;
   }
 
+  /**
+   * Returns the star's apparent visual magnitude.
+   */
   public double getMag() {
     return mag;
   }
 
+  /**
+   * Sets the star's apparent visual magnitude.
+   */
   public void setMag(double mag) {
     this.mag = mag;
   }
 
+  /**
+   * Returns the star's absolute visual magnitude (its apparent magnitude from a distance of 10
+   * parsecs).
+   */
   public double getAbsmag() {
     return absmag;
   }
 
+  /**
+   * Sets the star's absolute visual magnitude (its apparent magnitude from a distance of 10
+   * parsecs).
+   */
   public void setAbsmag(double absmag) {
     this.absmag = absmag;
   }
 
+  /**
+   * Returns the star's spectral type, if known.
+   */
   public String getSpect() {
     return spect;
   }
 
+  /**
+   * Sets the star's spectral type, if known.
+   */
   public void setSpect(String spect) {
     this.spect = spect;
   }
 
+  /**
+   * Returns the star's color index (blue magnitude - visual magnitude), where known.
+   */
   public Double getCi() {
     return ci;
   }
 
+  /**
+   * Sets the star's color index (blue magnitude - visual magnitude), where known.
+   */
   public void setCi(Double ci) {
     this.ci = ci;
   }
 
+  /**
+   * Returns the Cartesian coordinates of the star, in a system based on the equatorial coordinates
+   * as seen from Earth. +X is in the direction of the vernal equinox (at epoch 2000)
+   */
   public double getX() {
     return x;
   }
 
+  /**
+   * Sets the Cartesian coordinates of the star, in a system based on the equatorial coordinates as
+   * seen from Earth. +X is in the direction of the vernal equinox (at epoch 2000)
+   */
   public void setX(double x) {
     this.x = x;
   }
 
+  /**
+   * Returns the Cartesian coordinates of the star, in a system based on the equatorial coordinates
+   * as seen from Earth. +Y in the direction of R.A. 6 hours, declination 0 degrees.
+   */
   public double getY() {
     return y;
   }
 
+  /**
+   * Sets the Cartesian coordinates of the star, in a system based on the equatorial coordinates as
+   * seen from Earth. +Y in the direction of R.A. 6 hours, declination 0 degrees.
+   */
   public void setY(double y) {
     this.y = y;
   }
 
+  /**
+   * Returns the Cartesian coordinates of the star, in a system based on the equatorial coordinates
+   * as seen from Earth. +Z towards the north celestial pole.
+   */
   public double getZ() {
     return z;
   }
 
+  /**
+   * Sets the Cartesian coordinates of the star, in a system based on the equatorial coordinates as
+   * seen from Earth. +Z towards the north celestial pole.
+   */
   public void setZ(double z) {
     this.z = z;
   }
 
+  /**
+   * Returns the Cartesian velocity components of the star, in the same coordinate system described
+   * immediately above.
+   */
   public Double getVx() {
     return vx;
   }
 
+  /**
+   * Sets the Cartesian velocity components of the star, in the same coordinate system described
+   * immediately above.
+   */
   public void setVx(Double vx) {
     this.vx = vx;
   }
 
+  /**
+   * Returns the Cartesian velocity components of the star, in the same coordinate system described
+   * immediately above.
+   */
   public Double getVy() {
     return vy;
   }
 
+  /**
+   * Sets the Cartesian velocity components of the star, in the same coordinate system described
+   * immediately above.
+   */
   public void setVy(Double vy) {
     this.vy = vy;
   }
 
+  /**
+   * Returns the Cartesian velocity components of the star, in the same coordinate system described
+   * immediately above.
+   */
   public Double getVz() {
     return vz;
   }
 
+  /**
+   * Sets the Cartesian velocity components of the star, in the same coordinate system described
+   * immediately above.
+   */
   public void setVz(Double vz) {
     this.vz = vz;
   }
 
+  /**
+   * Returns the position in radians
+   */
   public double getRarad() {
     return rarad;
   }
 
+  /**
+   * Sets the position in radians
+   */
   public void setRarad(double rarad) {
     this.rarad = rarad;
   }
 
+  /**
+   * Returns the position in radians.
+   */
   public double getDecrad() {
     return decrad;
   }
 
+  /**
+   * Sets the position in radians.
+   */
   public void setDecrad(double decrad) {
     this.decrad = decrad;
   }
 
+  /**
+   * Returns the position in proper radians.
+   */
   public double getPmrarad() {
     return pmrarad;
   }
 
+  /**
+   * Sets the position in proper radians.
+   */
   public void setPmrarad(double pmrarad) {
     this.pmrarad = pmrarad;
   }
 
+  /**
+   * Returns the position in proper radians.
+   */
   public double getPmdecrad() {
     return pmdecrad;
   }
 
+  /**
+   * Sets the position in proper radians.
+   */
   public void setPmdecrad(double pmdecrad) {
     this.pmdecrad = pmdecrad;
   }
 
+  /**
+   * Returns the Bayer designation as a distinct value.
+   */
   public String getBayer() {
     return bayer;
   }
 
+  /**
+   * Sets the Bayer designation as a distinct value
+   */
   public void setBayer(String bayer) {
     this.bayer = bayer;
   }
 
+  /**
+   * Returns the Flamsteed number as a distinct value.
+   */
   public String getFlam() {
     return flam;
   }
 
+  /**
+   * Sets the Flamsteed number as a distinct value.
+   */
   public void setFlam(String flam) {
     this.flam = flam;
   }
 
+  /**
+   * Returns the standard constellation abbreviation
+   */
   public String getCon() {
     return con;
   }
 
+  /**
+   * Sets the standard constellation abbreviation.
+   */
   public void setCon(String con) {
     this.con = con;
   }
 
+  /**
+   * Returns a star in a multiple star system. comp = ID of companion star.
+   */
   public double getComp() {
     return comp;
   }
 
+  /**
+   * Sets a star in a multiple star system, comp = ID of companion star.
+   */
   public void setComp(double comp) {
     this.comp = comp;
   }
 
+  /**
+   * Returns a star in a multiple star system. comp_primary = ID of primary star for this
+   * component.
+   */
   public double getComp_primary() {
     return comp_primary;
   }
 
+  /**
+   * Sets a star in a multiple star system. comp_primary = ID of primary star for this component.
+   */
   public void setComp_primary(double comp_primary) {
     this.comp_primary = comp_primary;
   }
 
+  /**
+   * Returns a star in a multiple star system. Base = catalog ID or name for this multi-star
+   * system.
+   */
   public String getBase() {
     return base;
   }
 
+  /**
+   * Sets a star in a multiple star system. Base = catalog ID or name for this multi-star
+   * system.
+   * @param base
+   */
   public void setBase(String base) {
     this.base = base;
   }
 
+  /**
+   * Returns a star's luminosity as a multiple of Solar luminosity.
+   * @return
+   */
   public double getLum() {
     return lum;
   }
 
+  /**
+   * Sets a star's luminosity as a multiple of Solar luminosity.
+   * @param lum
+   */
   public void setLum(double lum) {
     this.lum = lum;
   }
 
+  /**
+   * Returns a star's standard variable star designation, when known.
+   * @return
+   */
   public String getVar() {
     return var;
   }
 
+  /**
+   * Sets a star's standard variable star designation, when known.
+   * @param var
+   */
   public void setVar(String var) {
     this.var = var;
   }
 
+  /**
+   * Returns a star's approximate minimum magnitude.
+   * @return
+   */
   public Double getVar_min() {
     return var_min;
   }
 
+  /**
+   * Sets a star's approximate maximum magnitude.
+   * @param var_min
+   */
   public void setVar_min(Double var_min) {
     this.var_min = var_min;
   }
 
+  /**
+   * Returns a star's approximate maximum magnitude.
+   * @return
+   */
   public Double getVar_max() {
     return var_max;
   }
 
+  /**
+   * Sets a star's approximate maximum magnitude.
+   * @param var_max
+   */
   public void setVar_max(Double var_max) {
     this.var_max = var_max;
   }

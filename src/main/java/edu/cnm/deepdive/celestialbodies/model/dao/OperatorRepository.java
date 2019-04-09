@@ -1,9 +1,7 @@
 package edu.cnm.deepdive.celestialbodies.model.dao;
 
 import edu.cnm.deepdive.celestialbodies.model.entity.Operator;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import net.bytebuddy.dynamic.DynamicType.Builder.FieldDefinition.Optional;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

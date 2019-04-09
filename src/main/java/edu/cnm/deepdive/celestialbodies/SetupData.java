@@ -15,6 +15,9 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Component;
 
+/**
+ * This class pre-loads data from a csv file onto the Spring database.
+ */
 @Component
 public class SetupData {
 
@@ -40,7 +43,6 @@ public class SetupData {
     List<Star> stars = loadObjectList(Star.class, "raw/hygdata_v3.csv");
 
     try {
-
       starRepository.saveAll(stars);
     } catch (DataIntegrityViolationException e){
       System.out.println(e.getMessage());
@@ -59,7 +61,7 @@ public class SetupData {
    * @param <T> Generic type parameter to allow DataBasePopulator to be inputted.
    * @return Returns a type-safe empty, immutable {@link List}
    */
-  public <T> List<T> loadObjectList(Class<T> type, String fileName) {
+  private <T> List<T> loadObjectList(Class<T> type, String fileName) {
     try {
       CsvSchema bootstrapSchema = CsvSchema.emptySchema().withHeader();
       CsvMapper mapper = new CsvMapper();

@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/**
+ * Defines a database entity and REST resource representing the attributes of a star.
+ */
 @Entity
 public class Star {
 
@@ -106,77 +109,168 @@ public class Star {
 
   private Double var_max;
 
+  /**
+   * Returns the database primary key
+   *
+   * @return id database primary key
+   */
   public long getId() {
     return id;
   }
 
+  /**
+   * Sets the database primary key
+   *
+   * @param id database primary key
+   */
   public void setId(long id) {
     this.id = id;
   }
 
+  /**
+   * Returns The star's ID in the Hipparcos catalog, if known.
+   *
+   * @return hip the star's ID in the Hipparcos catalog, if known.
+   */
   public long getHip() {
     return hip;
   }
 
+  /**
+   * Sets the star's ID in the Hipparcos catalog, if known.
+   *
+   * @param hip the star's ID in the Hipparcos catalog, if known.
+   */
   public void setHip(long hip) {
     this.hip = hip;
   }
 
+  /**
+   * Returns the star's ID in the Henry Draper catalog, if known.
+   *
+   * @return hd the star's ID in the Henry Draper catalog, if known.
+   */
   public long getHd() {
     return hd;
   }
 
+  /**
+   * Sets the star's ID in the Henry Draper catalog, if known.
+   *
+   * @param hd the star's ID in the Henry Draper catalog, if known.
+   */
   public void setHd(long hd) {
     this.hd = hd;
   }
 
+  /**
+   * Returns the star's ID in the Harvard Revised catalog, which is the same as its number in the
+   * Yale Bright Star Catalog.
+   *
+   * @return hr the star's ID in the Harvard Revised catalog, which is the same as its number in the
+   * Yale Bright Star Catalog.
+   */
   public String getHr() {
     return hr;
   }
 
+  /**
+   * Sets the star's ID in the Harvard Revised catalog, which is the same as its number in the Yale
+   * Bright Star Catalog.
+   *
+   * @param hr the star's ID in the Harvard Revised catalog, which is the same as its number in the
+   * Yale Bright Star Catalog.
+   */
   public void setHr(String hr) {
     this.hr = hr;
   }
 
+  /**
+   * Returns the star's ID in the third edition of the Gliese Catalog of Nearby Stars.
+   *
+   * @return gl the star's ID in the third edition of the Gliese Catalog of Nearby Stars.
+   */
   public String getGl() {
     return gl;
   }
 
+  /**
+   * Sets the star's ID in the third edition of the Gliese Catalog of Nearby Stars.
+   * @param gl the star's ID in the third edition of the Gliese Catalog of Nearby Stars.
+   */
   public void setGl(String gl) {
     this.gl = gl;
   }
 
+  /**
+   * Returns The Bayer / Flamsteed designation, primarily from the Fifth Edition of the Yale Bright
+   * Star Catalog. This is a combination of the two designations. The Flamsteed number, if present,
+   * is given first; then a three-letter abbreviation for the Bayer Greek letter; the Bayer
+   * superscript number, if present; and finally, the three-letter constellation abbreviation.
+   *
+   * @return bf the Bayer / Flamsteed designation.
+   */
   public String getBf() {
     return bf;
   }
 
+  /**
+   * Sets the Bayer / Flamsteed designation.
+   * @param bf the Bayer / Flamsteed designation.
+   */
   public void setBf(String bf) {
     this.bf = bf;
   }
 
+  /**
+   * Returns a common name for the star.
+   *
+   * @return proper a common name for the star.
+   */
   public String getProper() {
     return proper;
   }
 
+  /**
+   * Sets the common name for the star.
+   * @param proper the common name for the star
+   */
   public void setProper(String proper) {
     this.proper = proper;
   }
 
+  /**
+   * Returns the star's right ascension for epoch and equinox 2000.0.
+   * @return ra
+   */
   public double getRa() {
     return ra;
   }
 
+  /**
+   * Sets the star's right ascension, for epoch and equinox 2000.0.
+   * @param ra the star's right ascension, for epoch and equinox 2000.0.
+   */
   public void setRa(double ra) {
     this.ra = ra;
   }
 
+  /**
+   * Returns the star's declination, for epoch and equinox 2000.0.
+   * @return dec
+   */
   public double getDec() {
     return dec;
   }
 
+  /**
+   * Sets the star's declination, for epoch and equinox 2000.0.
+   * @param dec the star's declination, for epoch and equinox 2000.0.
+   */
   public void setDec(double dec) {
     this.dec = dec;
   }
+
 
   public double getDist() {
     return dist;

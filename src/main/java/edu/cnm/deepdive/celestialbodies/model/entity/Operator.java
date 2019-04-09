@@ -1,7 +1,5 @@
-package edu.cnm.deepdive.celestialbodies.entity;
+package edu.cnm.deepdive.celestialbodies.model.entity;
 
-
-import edu.cnm.deepdive.celestialbodies.view.FlatOperator;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +17,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.springframework.lang.NonNull;
 
 @Entity
-public class Operator  implements FlatOperator {
+public class Operator {
 
 
   @Id

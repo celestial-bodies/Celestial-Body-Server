@@ -1,7 +1,6 @@
-package edu.cnm.deepdive.celestialbodies.entity;
+package edu.cnm.deepdive.celestialbodies.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import edu.cnm.deepdive.celestialbodies.view.FlatStellar;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -21,8 +20,9 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.lang.NonNull;
 
+
 @Entity
-public class Stellar implements FlatStellar {
+public class Stellar {
 
   @Id
   @GeneratedValue(generator = "uuid2")

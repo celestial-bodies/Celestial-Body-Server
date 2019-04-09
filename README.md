@@ -34,13 +34,13 @@ Celestial Bodies is close to being complete, the user is able to point their dev
 
 ### Known Issues/Bugs
 
-+ App crashes if there is a duplicate star within a search.
++ Currently having issues with connecting to frontend server, search and info hard coded.
 
 ## Android API Version and Hardware
 
-for this application the following were used to test UI and function.
-+ Andrid API 27
-+ Nexus 5x emulator
++ Intellij
+
++ Java Virtual Machine (JVM)
 
 ## Third Party Libraries
   
@@ -66,7 +66,7 @@ WikiSky provided the ability information and the ability to search for stars.
 
 + [Wikisky XML Documentation](http://server7.wikisky.org/XML_API_V1.0.html)
 
-+[Wikisky Image Generator Documentation](http://server7.wikisky.org/ImageGenerator_1.0.html)
++ [Wikisky Image Generator Documentation](http://server7.wikisky.org/ImageGenerator_1.0.html)
 
 ### HYG Database
 

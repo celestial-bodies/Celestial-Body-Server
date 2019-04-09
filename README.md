@@ -54,7 +54,7 @@ for this application the following were used to test UI and function.
 
 + [Deep Dive Android Utilities](https://github.com/deep-dive-coding-java/android-utilities/blob/master/README.md)
 
-+ Room
++ [Room](https://developer.android.com/jetpack/androidx/releases/room)
 
 + [Sensor-fusion](https://bitbucket.org/apacha/sensor-fusion-demo)
 
@@ -69,7 +69,11 @@ This app accesses has the HYG star database pre-loaded as well accesses the Wiki
 WikiSky provided the ability information and the ability to search for stars.
 + [WikiSky.org](http://www.wikisky.org/)
 
-+ [Wikisy APIs](http://www.wikisky.org/)
++ [Wikisky APIs](http://www.wikisky.org/)
+
++ [Wikisky XML Documentation](http://server7.wikisky.org/XML_API_V1.0.html)
+
++[Wikisky Image Generator Documentation](http://server7.wikisky.org/ImageGenerator_1.0.html)
 
 ### HYG Database
 
@@ -91,6 +95,8 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 
 ## Licenses/Copyright
 [Copyright & Licenses](/docs/Copyright_&_Licenses.md)
+
+
 
 ## Instructions for Building Celestial Bodies
 

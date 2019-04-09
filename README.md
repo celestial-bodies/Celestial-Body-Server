@@ -79,13 +79,6 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 + [Background Information](http://www.astronexus.com/hyg)
 + [Version Control](http://www.astronexus.com/endeavour)
 
-## Potential Future of Celestial Bodies
-
-
-### Goals
-
-### User Interface Improvements
-
 ## Design Documentation
 
 + [ERD](docs/ERD_backend.pdf)

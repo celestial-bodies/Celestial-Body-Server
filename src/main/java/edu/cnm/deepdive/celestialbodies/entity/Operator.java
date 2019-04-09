@@ -41,7 +41,7 @@ public class Operator  implements FlatOperator {
 
   @NonNull
   @Column
-  private Long authorization;
+  private Long auth;
 
   @NonNull
   @Column
@@ -66,12 +66,12 @@ public class Operator  implements FlatOperator {
     this.profile = profile;
   }
 
-  public Long getAuthorization() {
-    return authorization;
+  public Long getAuth() {
+    return auth;
   }
 
-  public void setAuthorization(Long authorization) {
-    this.authorization = authorization;
+  public void setAuth(Long auth) {
+    this.auth = auth;
   }
 
   public Long getRating() {

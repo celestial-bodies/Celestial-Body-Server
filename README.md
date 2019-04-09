@@ -43,23 +43,16 @@ for this application the following were used to test UI and function.
 + Nexus 5x emulator
 
 ## Third Party Libraries
-
-+ [Retrofit](https://square.github.io/retrofit/) (includes OkHttp and Retrofit)
-
-  Retrofit is designed to establish and perform requests to CoolClimate API web service.
   
-+ [Stetho](https://github.com/facebook/stetho/blob/master/README.md)
++ [Spring](https://spring.io/)
 
-  Stetho is a developmental tool that examines the local display resources and database contents.
++ [Derby](https://db.apache.org/derby/)
+
++ [Hibernate](http://hibernate.org/)
 
 + [Deep Dive Android Utilities](https://github.com/deep-dive-coding-java/android-utilities/blob/master/README.md)
 
-+ [Room](https://developer.android.com/jetpack/androidx/releases/room)
 
-+ [Sensor-fusion](https://bitbucket.org/apacha/sensor-fusion-demo)
-
-  Sensor-fusion is a publicly-available demo that allows the user to access their phone's gyroscope and/or accelerometer
-     in order to map out its spatial orientation.
 
 ## External Services
 This app accesses has the HYG star database pre-loaded as well accesses the Wikisky XML API.
@@ -87,14 +80,12 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 
 + [ERD](docs/ERD_backend.pdf)
 
-+ [User Stories](docs/User_Stories.md)
-
 + [DDL](docs/ddl.md)
 
 ## Javadoc Page
 
 ## Licenses/Copyright
-[Copyright & Licenses](/docs/Copyright_&_Licenses.md)
+[Copyright & Licenses](https://github.com/celestial-bodies/celestial-bodies-client/blob/master/docs/Copyright_&_Licenses.md)
 
 [MIT License](/docs/LICENSE.txt)
 
@@ -108,7 +99,7 @@ Formerly known as the standard JSON library for Java (or JVM platform in general
 
 [Spring Documentation](https://spring.io/docs)
 
-Spring is a dependency and library-management framework, 
+Spring is a dependency and library-management framework
 
 [Hibernate](https://hibernate.org/community/license/)
 
@@ -141,3 +132,5 @@ Spring is a dependency and library-management framework,
 + Once the program is cloned and ready to go, just allow it to build and launch the server before launching the app.
 
 ## Celestial Bodies, All Rights Reserved
+
+[Celestial Bodies License](/docs/LICENSE.md)

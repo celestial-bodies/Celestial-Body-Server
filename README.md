@@ -98,17 +98,25 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 
 [MIT License](/docs/LICENSE.txt)
 
-[Gson](https://github.com/google/gson/blob/master/LICENSE)
-
-[Gson Documentation](https://github.com/google/gson/blob/master/UserGuide.md)
-
-Gson is a Java serialization/deserialization library to convert Java Objects into JSON and back.
-
 [Jackson](https://github.com/FasterXML/jackson-core/blob/master/src/main/resources/META-INF/LICENSE)
 
 [Jackson Documentation](https://github.com/FasterXML/jackson-docs)
 
 Formerly known as the standard JSON library for Java (or JVM platform in general), or, as the "best JSON parser for Java."
+
+[Spring](https://github.com/spring-projects/spring-boot/blob/master/LICENSE.txt)
+
+[Spring Documentation](https://spring.io/docs)
+
+Spring is a dependency and library-management framework, 
+
+[Hibernate](https://hibernate.org/community/license/)
+
+[Hibernate Documentation](https://hibernate.org/orm/documentation/5.4/)
+
+[Derby](http://db.apache.org/derby/license.html)
+
+[Derby Documentation](https://db.apache.org/derby/manuals/)
 
 ## Instructions for Building Celestial Bodies
 

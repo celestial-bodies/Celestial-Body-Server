@@ -23,10 +23,30 @@ public class CelestialbodiesApplicationTests {
   private MockMvc mockMvc;
 
   @Test
-  public void shouldReturnDefaultMessage() throws Exception {
+  public void shouldReturnId() throws Exception {
     //Make sure at least one location is returned, by checking that "id" is part of the response
     this.mockMvc.perform(get("/stars")).andDo(print()).andExpect(status().isOk())
             .andExpect(content().string(containsString("id")));
   }
 
+  @Test
+  public void shouldReturnProper() throws Exception {
+    //Make sure at least one location is returned, by checking that "id" is part of the response
+    this.mockMvc.perform(get("/stars")).andDo(print()).andExpect(status().isOk())
+        .andExpect(content().string(containsString("proper")));
+  }
+
+  @Test
+  public void shouldReturnRightAscension() throws Exception {
+    //Make sure at least one location is returned, by checking that "id" is part of the response
+    this.mockMvc.perform(get("/stars")).andDo(print()).andExpect(status().isOk())
+        .andExpect(content().string(containsString("ra")));
+  }
+
+  @Test
+  public void shouldReturnDeclination() throws Exception {
+    //Make sure at least one location is returned, by checking that "id" is part of the response
+    this.mockMvc.perform(get("/stars")).andDo(print()).andExpect(status().isOk())
+        .andExpect(content().string(containsString("dec")));
+  }
 }

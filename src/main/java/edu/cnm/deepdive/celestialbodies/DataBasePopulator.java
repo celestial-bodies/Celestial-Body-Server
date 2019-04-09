@@ -17,11 +17,12 @@ import org.springframework.stereotype.Component;
 public class DataBasePopulator implements
     ApplicationListener<ContextRefreshedEvent> {
 
-  public static int counter;
-
   private SetupData setupData;
 
-
+  /**
+   * Receives {@link SetupData} for running setup data on startup.
+   * @param setupData
+   */
   public DataBasePopulator(SetupData setupData) {
     this.setupData = setupData;
   }

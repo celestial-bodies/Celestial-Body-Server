@@ -1,6 +1,6 @@
 # Celestial-Body-Server
 Backend for celestial body program
-## [DDL](docs/ddl.md)
+
 
 
 ## Required functional components
@@ -88,9 +88,11 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 
 ## Design Documentation
 
-+ [Wireframe]
++ [ERD](docs/ERD_backend.pdf)
 
 + [User Stories](docs/User_Stories.md)
+
++ [DDL](docs/ddl.md)
 
 ## Javadoc Page
 
@@ -116,5 +118,7 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 
 
 ## Instructions for Using Celestial Bodies
+
++ Once the program is cloned and ready to go, just allow it to build and launch the server before launching the app.
 
 ## Celestial Bodies, All Rights Reserved

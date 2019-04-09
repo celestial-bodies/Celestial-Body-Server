@@ -69,7 +69,7 @@ This app accesses has the HYG star database pre-loaded as well accesses the Wiki
 WikiSky provided the ability information and the ability to search for stars.
 + [WikiSky.org](http://www.wikisky.org/)
 
-+ [Wikisy XML API](http://server3.wikisky.org/XML_API_V1.0.html)
++ [Wikisy APIs](http://www.wikisky.org/)
 
 ### HYG Database
 

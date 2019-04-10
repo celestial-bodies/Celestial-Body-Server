@@ -74,14 +74,14 @@ public class Operator {
   }
 
   /**
-   * Returns {@list List} of queried stars.
+   * Returns {@link List} of queried stars.
    */
   public List<Star> getStars() {
     return stars;
   }
 
   /**
-   * Sets a {@list List} of queried stars
+   * Sets a {@link List} of queried stars
    */
   public void setStars(List<Star> stars) {
     this.stars = stars;

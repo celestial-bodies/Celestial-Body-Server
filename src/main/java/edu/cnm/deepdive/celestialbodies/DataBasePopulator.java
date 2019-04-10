@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * NullPointerExceptions: this class manages this situation.  This class runs logic after the Spring
  * context has been initialized, waiting for all of them to initialize.
  *
- * In order to achieve this a bean that implements the ApplicationListener<ContextRefreshedEvent>
+ * In order to achieve this a bean that implements the ApplicationListener&lt;ContextRefreshedEvent&gt;
  * interface is implemented.
  */
 @Component
@@ -21,7 +21,6 @@ public class DataBasePopulator implements
 
   /**
    * Receives {@link SetupData} for running setup data on startup.
-   * @param setupData
    */
   public DataBasePopulator(SetupData setupData) {
     this.setupData = setupData;
@@ -31,11 +30,6 @@ public class DataBasePopulator implements
   public void onApplicationEvent(ContextRefreshedEvent event) {
     setupData.setupData();
   }
-
-
-
-
-
 
 
 }

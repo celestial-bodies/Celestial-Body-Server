@@ -84,6 +84,8 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 
 ## Javadoc Page
 
+[Javadocs](docs/api)
+
 ## Licenses/Copyright
 [Copyright & Licenses](https://github.com/celestial-bodies/celestial-bodies-client/blob/master/docs/Copyright_&_Licenses.md)
 

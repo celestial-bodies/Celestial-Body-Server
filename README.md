@@ -89,7 +89,7 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 ## Licenses/Copyright
 [Copyright & Licenses](https://github.com/celestial-bodies/celestial-bodies-client/blob/master/docs/Copyright_&_Licenses.md)
 
-[Celestial Bodies MIT License](LICENSE)
+[Celestial Bodies MIT License](LICENSE.md)
 
 [Jackson](https://github.com/FasterXML/jackson-core/blob/master/src/main/resources/META-INF/LICENSE)
 
@@ -135,4 +135,4 @@ Spring is a dependency and library-management framework
 
 ## Celestial Bodies, All Rights Reserved
 
-[Celestial Bodies License](LICENSE)
+[Celestial Bodies License](LICENSE.md)

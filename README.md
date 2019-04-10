@@ -89,7 +89,7 @@ HYG Star Database provided and managed 100,000+ star database that was used for 
 ## Licenses/Copyright
 [Copyright & Licenses](https://github.com/celestial-bodies/celestial-bodies-client/blob/master/docs/Copyright_&_Licenses.md)
 
-[MIT License](/docs/LICENSE.txt)
+[Celestial Bodies MIT License](docs/LICENSE.md)
 
 [Jackson](https://github.com/FasterXML/jackson-core/blob/master/src/main/resources/META-INF/LICENSE)
 
